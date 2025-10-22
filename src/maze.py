@@ -5,11 +5,7 @@ Grid = List[List[str]]
 Pos = Tuple[int, int]
 
 class Maze:
-    """
-    Representa o labirinto com convenções:
-    'S' = start, 'G' = goal, '#' = parede, '.' = célula livre.
-    Ações: 'N','S','O','L' (Norte, Sul, Oeste, Leste).
-    """
+    
     def __init__(self, grid: Grid):
         self.grid = grid
         self.H = len(grid)

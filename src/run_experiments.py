@@ -38,7 +38,7 @@ def run_all_in_directory(data_dir: str, output_csv: str = "results_all.csv"):
         print(f"\n=== Executando algoritmos em {maze_file.name} ===")
         mz = Maze.from_file(str(maze_file))
 
-        # Extrai informações do nome (se seguir o padrão labirinto_10x10_d30.txt)
+        # Extrai informações do nome
         name_parts = maze_file.stem.split("_")
         size = "?"
         density = "?"
@@ -76,14 +76,14 @@ def run_all_in_directory(data_dir: str, output_csv: str = "results_all.csv"):
                 f"nós expandidos={row['nodes_expanded']}"
             )
 
-    # Salva CSV consolidado
+    # Salva CSV
     output_path = Path(output_csv)
     with open(output_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=rows[0].keys())
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"\n Resultados consolidados salvos em: {output_path.resolve()}")
+    print(f"\n Resultados salvos em: {output_path.resolve()}")
 
 if __name__ == "__main__":
     HERE = Path(__file__).parent

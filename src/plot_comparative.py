@@ -6,12 +6,7 @@ from pathlib import Path
 import numpy as np
 
 def plot_comparative(csv_path: str, output_dir: str = "../results"):
-    """
-    Lê o arquivo CSV consolidado (results_all.csv) e gera:
-      - Gráficos comparativos (tempo, nós, memória)
-      - Resumo estatístico (tempo, nós, custo, memória)
-    """
-
+   
     os.makedirs(output_dir, exist_ok=True)
     df = pd.read_csv(csv_path)
 
@@ -136,9 +131,9 @@ def plot_comparative(csv_path: str, output_dir: str = "../results"):
         plt.tight_layout()
         plt.savefig(os.path.join(output_dir, "comparativo_tempo_densidade.png"), dpi=300)
         plt.close()
-        print("✅ Gráfico de densidade gerado com sucesso.")
+        print("Gráfico de densidade gerado com sucesso.")
     else:
-        print("⚠️ Nenhuma densidade válida encontrada; gráfico de densidade não gerado.")
+        print("Nenhuma densidade válida encontrada; gráfico de densidade não gerado.")
 
     # -----------------------------
     # 6. Resumo estatístico
@@ -161,12 +156,12 @@ def plot_comparative(csv_path: str, output_dir: str = "../results"):
     # Salva o resumo
     stats_path = os.path.join(output_dir, "summary_statistics.csv")
     stats.to_csv(stats_path, index=False, encoding="utf-8")
-    print("\n📊 Resumo estatístico salvo em:", stats_path)
+    print("\n Resumo estatístico salvo em:", stats_path)
     print(stats.to_string(index=False))
 
-    print(f"\n✅ Todos os gráficos salvos em {os.path.abspath(output_dir)}")
+    print(f"\n Todos os gráficos salvos em {os.path.abspath(output_dir)}")
 
 if __name__ == "__main__":
     HERE = Path(__file__).parent
-    csv_path = os.path.join(HERE.parent, "results_all.csv")
+    csv_path = os.path.join(HERE.parent, "results", "results_all.csv")
     plot_comparative(csv_path)

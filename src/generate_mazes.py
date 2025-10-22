@@ -3,9 +3,7 @@ import random
 import os
 
 def generate_maze(width, height, densidade=0.25, nome_arquivo="labirinto.txt"):
-    """
-    Gera um labirinto aleatório com densidade de paredes controlada.
-    """
+    
     grid = [['.' for _ in range(width)] for _ in range(height)]
 
     # Posição inicial e final fixas nos cantos
