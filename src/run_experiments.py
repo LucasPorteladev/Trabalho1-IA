@@ -88,6 +88,6 @@ def run_all_in_directory(data_dir: str, output_csv: str = "results_all.csv"):
 if __name__ == "__main__":
     HERE = Path(__file__).parent
     data_dir = os.path.join(HERE.parent, "data")
-    output_csv = os.path.join(HERE.parent, "results_all.csv")
+    output_csv = os.path.join(HERE.parent, "results", "results_all.csv")
 
     run_all_in_directory(data_dir, output_csv)
