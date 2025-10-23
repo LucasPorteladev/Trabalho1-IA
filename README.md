@@ -1,3 +1,7 @@
+# Repositório - Trabalho 1 Inteligência Artificial
+
+Este repositório contém o primeiro trabalho prático desenvolvido para a disciplina G05IART0.02 - Inteligência Artificial, ministrada pelo Prof. Tiago Alves de Oliveira, no Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG), Campus V.
+
 # Comparação de Algoritmos de Busca em Labirintos
 
 ## Objetivo
@@ -24,8 +28,8 @@ meu-projeto/
 
 1. Clone o repositório:
 ```bash
-git clone <URL_DO_REPOSITORIO>
-cd meu-projeto
+#usando HTTPS
+git clone <https://github.com/LucasPorteladev/Trabalho1-IA.git>
 ```
 2. Instale as dependências:
 ```bash
