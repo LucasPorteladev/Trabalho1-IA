@@ -56,6 +56,14 @@ python src/plot_comparative.py
 
 Os gráficos mostrarão comparações de desempenho entre algoritmos e o impacto das heurísticas.
 
+## Resultados Obtidos
+
+Os resultados detalhados das execuções e comparações de desempenho podem ser consultados no PDF abaixo:
+
+👉 [**Relatório de Resultados (PDF)**](./trabalho1_lucasportela.pdf)
+
+---
+
 # Ambiente de Execução
 
 | **Máquina**         | **Processador**                     | **Memória RAM** | **Sistema Operacional** |
