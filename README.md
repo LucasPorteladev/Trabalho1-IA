@@ -55,3 +55,15 @@ python src/plot_comparative.py
 ```
 
 Os gráficos mostrarão comparações de desempenho entre algoritmos e o impacto das heurísticas.
+
+# Ambiente de Execução
+
+| **Máquina**         | **Processador**                     | **Memória RAM** | **Sistema Operacional** |
+|---------------------|-------------------------------------|-----------------|--------------------------|
+| Acer Nitro V15      | 13th Intel(R) Core(TM) i7-13620H    | 32 GB  5200MHz  | Windows 11             |
+
+--- 
+
+##  Autor
+
+*Lucas Cerqueira Portela* — *Computer Engineering Student @ CEFET-MG*  
