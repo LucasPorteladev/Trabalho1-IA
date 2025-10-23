@@ -74,4 +74,4 @@ Os resultados detalhados das execuções e comparações de desempenho podem ser
 
 ##  Autor
 
-*Lucas Cerqueira Portela* — *Computer Engineering Student @ CEFET-MG*  
+*Lucas Cerqueira Portela* — *Estudante de Engenharia de Computação @ CEFET-MG*  
